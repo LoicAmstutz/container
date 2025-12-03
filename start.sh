@@ -20,3 +20,5 @@ echo "--- für UI von Mongo-Datenbank"
 docker run -d -p 8081:8081 -e ME_CONFIG_MONGODB_ADMINUSERNAME=admin -e ME_CONFIG_MONGODB_ADMINPASSWORD=Welcome$21 -e ME_CONFIG_MONGODB_SERVER=mongo --net mongo-network --name mongo-express mongo-express
 
 docker ps
+
+docker logs mongo-express
